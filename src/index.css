@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: white;
+  padding: 30px;
+}
+.display{
+  font-size: 5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color : rgba(0, 0, 0, 0.836);
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 25px;
+
+}
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  transition: background-color 0.5 ease;
+}
+.start-button{
+  background-color: greenyellow;
+
+}
+.start-button:hover{
+  background-color: rgb(146, 218, 39);
+
+}
+.stop-button {
+  background-color: red;
+}
+.stop-button:hover {
+  background-color: rgb(214, 2, 2);
+}
+.reset-button{
+  background-color: aqua;
+}
+.reset-button:hover{
+  background-color: rgb(3, 207, 207);
 }
